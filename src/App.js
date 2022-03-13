@@ -5,7 +5,7 @@ import List from './components/layout/List/List';
 import MainLayout from './components/layout/MainLayout/MainLayout';
 
 function App() {
-  const basicList = ['#FFFFFF', 'FF0000', 'FFFF00'];
+  const basicList = ['#FFFFFF', '#FF0000', '#FFFF00'];
 
   const [list, updateList] = React.useState([...basicList]);
   console.log('list', list);

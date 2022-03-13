@@ -3,4 +3,11 @@
 .root {
   width: 50%;
   margin: auto;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .root {
+    width: 90%;
+  }
 }
