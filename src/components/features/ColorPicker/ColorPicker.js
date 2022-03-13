@@ -28,6 +28,8 @@ const ColorPicker = ({ value, handleNewColor }) => {
           type="text"
           value={color}
           onChange={handleColor}
+          required
+          pattern="#[A-Z0-9]{6}"
         />
         <input className={styles.submit} type="submit" value="ADD TO LIST" />
       </form>
