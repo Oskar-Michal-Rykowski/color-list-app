@@ -1,0 +1,8 @@
+@import '../../../styles/settings.scss';
+
+.header {
+  text-align: center;
+  height: 50px;
+  margin: auto;
+  border-bottom: $border-standard;
+}

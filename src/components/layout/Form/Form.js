@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './Form.module.scss';
-// import { Form } from '../Form/Form';
 
 const Form = () => (
-  <div className="App-Form">
+  <div className={styles.form}>
     <h1>Form</h1>
   </div>
 );

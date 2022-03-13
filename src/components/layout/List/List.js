@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './List.module.scss';
-// import { List } from '../List/List';
 
 const List = () => (
-  <div className="App-List">
+  <div className={styles.list}>
     <h1>List</h1>
   </div>
 );
