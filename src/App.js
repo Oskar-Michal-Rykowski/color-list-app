@@ -2,7 +2,7 @@ import React from 'react';
 import Form from './components/layout/Form/Form';
 import Header from './components/layout/Header/Header';
 import List from './components/layout/List/List';
-import MainLayout from './components/layout/MainLayout/MainLayout';
+import MainLayout from './components/layout/MainLayout/MainLayout.tsx';
 
 function App() {
   const basicList = ['#FFFFFF', '#FF0000', '#FFFF00'];
