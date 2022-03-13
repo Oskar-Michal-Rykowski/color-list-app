@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './components/layout/Form/Form';
-import Header from './components/layout/Header/Header';
+import Header from './components/layout/Header/Header.tsx';
 import List from './components/layout/List/List.tsx';
 import MainLayout from './components/layout/MainLayout/MainLayout.tsx';
 
