@@ -4,7 +4,7 @@ import Header from './components/layout/Header/Header.tsx';
 import List from './components/layout/List/List.tsx';
 import MainLayout from './components/layout/MainLayout/MainLayout.tsx';
 
-function App() {
+const App = () => {
   const basicList = ['#FFFFFF', '#FF0000', '#FFFF00'];
 
   const [list, updateList] = React.useState([...basicList]);
@@ -33,6 +33,6 @@ function App() {
       <List list={list} removingFunction={removeColor} />
     </MainLayout>
   );
-}
+};
 
 export default App;
