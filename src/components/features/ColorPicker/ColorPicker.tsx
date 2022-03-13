@@ -1,9 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 
 import styles from './ColorPicker.module.scss';
 
-const ColorPicker = ({ value, handleNewColor }) => {
+type Handler = {
+  handleNewColor: (string)=>string[]
+}
+
+const ColorPicker:  FunctionComponent<Handler> = ({handleNewColor}) => {
   const [color, updateColor] = React.useState('#FF0000');
 
   const handleColor = (e) => {
@@ -14,6 +17,7 @@ const ColorPicker = ({ value, handleNewColor }) => {
     e.preventDefault();
     handleNewColor(color);
   };
+
   return (
     <div className={styles.picker}>
       <form onSubmit={handleSubmit}>
@@ -37,8 +41,6 @@ const ColorPicker = ({ value, handleNewColor }) => {
   );
 };
 
-ColorPicker.propTypes = {
-  children: PropTypes.node,
-};
+
 
 export default ColorPicker;

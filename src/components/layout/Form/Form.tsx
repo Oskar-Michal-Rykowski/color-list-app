@@ -1,10 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import ColorPicker from '../../features/ColorPicker/ColorPicker.tsx';
 
 import styles from './Form.module.scss';
-import ColorPicker from '../../features/ColorPicker/ColorPicker';
 
-class Form extends React.Component {
+type Props = {
+  handleNewColor: () => string[];
+}
+
+class Form extends React.Component<Props> {
   render() {
     const { handleNewColor } = this.props;
     return (
@@ -14,9 +17,5 @@ class Form extends React.Component {
     );
   }
 }
-
-Form.propTypes = {
-  children: PropTypes.node,
-};
 
 export default Form;
