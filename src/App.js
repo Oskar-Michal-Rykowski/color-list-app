@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './components/layout/Form/Form';
 import Header from './components/layout/Header/Header';
-import List from './components/layout/List/List';
+import List from './components/layout/List/List.tsx';
 import MainLayout from './components/layout/MainLayout/MainLayout.tsx';
 
 function App() {

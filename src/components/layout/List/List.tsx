@@ -1,10 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 
 import styles from './List.module.scss';
 
-const List = ({ list, removingFunction }) => {
-  const handleClick = (color) => {
+interface Props  {
+  list: string[],
+  removingFunction: (string) => void,
+};
+
+const List: FunctionComponent<Props> = ({ list, removingFunction }) => {
+  const handleClick = (color: string)  => {
     removingFunction(color);
   };
 
@@ -32,10 +36,6 @@ const List = ({ list, removingFunction }) => {
       </div>
     </div>
   );
-};
-
-List.propTypes = {
-  children: PropTypes.node,
 };
 
 export default List;
