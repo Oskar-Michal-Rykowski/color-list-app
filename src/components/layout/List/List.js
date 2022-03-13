@@ -13,10 +13,20 @@ const List = ({ list, removingFunction }) => {
       <h1>List</h1>
       <div>
         {list.map((color) => (
-          <div>
-            <input type="color" value={color} disabled />
+          <div className={styles.rectangle}>
+            <input
+              className={styles.color}
+              type="color"
+              value={color}
+              disabled
+            />
             <h2>{color}</h2>
-            <button onClick={() => handleClick(color)}>REMOVE</button>
+            <button
+              className={styles.button}
+              onClick={() => handleClick(color)}
+            >
+              REMOVE
+            </button>
           </div>
         ))}
       </div>

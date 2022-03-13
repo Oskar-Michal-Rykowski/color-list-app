@@ -1,6 +1,49 @@
 @import '../../../styles/settings.scss';
 
-.form {
-  text-align: center;
-  border-bottom: $border-standard;
+.picker {
+  margin: 20px 0;
+
+  form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin: auto;
+      box-sizing: border-box;
+      height: 30px;
+      width: 250px;
+      // vertical-align: auto;
+    }
+    .color {
+      border: none;
+      background: none;
+      height: 40px;
+      width: 257px;
+      &::-webkit-color-swatch {
+        border: 1px solid $brand-color;
+        border-radius: 5px;
+      }
+    }
+    .text {
+      border: 1px solid $brand-color;
+      border-radius: 5px;
+      margin: auto;
+      padding-left: 10px;
+    }
+    .submit {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: white;
+      background: $brand-color;
+      border: none;
+      border-radius: 5px;
+      transition: 1s;
+    }
+    .submit:hover {
+      color: $brand-color;
+      border: 1px solid $brand-color;
+      background: white;
+      transition: 1s;
+    }
+  }
 }

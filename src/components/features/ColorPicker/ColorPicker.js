@@ -17,9 +17,19 @@ const ColorPicker = ({ value, handleNewColor }) => {
   return (
     <div className={styles.picker}>
       <form onSubmit={handleSubmit}>
-        <input type="color" value={color} onChange={handleColor} />
-        <input type="text" value={color} onChange={handleColor} />
-        <input type="submit" value="ADD TO LIST" />
+        <input
+          className={styles.color}
+          type="color"
+          value={color}
+          onChange={handleColor}
+        />
+        <input
+          className={styles.text}
+          type="text"
+          value={color}
+          onChange={handleColor}
+        />
+        <input className={styles.submit} type="submit" value="ADD TO LIST" />
       </form>
     </div>
   );

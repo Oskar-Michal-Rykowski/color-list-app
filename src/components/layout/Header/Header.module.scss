@@ -1,8 +1,10 @@
 @import '../../../styles/settings.scss';
 
 .header {
+  color: $dark-color;
   text-align: center;
   height: 50px;
   margin: auto;
   border-bottom: $border-standard;
+  font-family: $basic-font;
 }

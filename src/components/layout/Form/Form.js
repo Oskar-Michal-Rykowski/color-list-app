@@ -7,7 +7,6 @@ import ColorPicker from '../../features/ColorPicker/ColorPicker';
 const Form = ({ handleNewColor }) => {
   return (
     <div className={styles.form}>
-      <h1>Form</h1>
       <ColorPicker handleNewColor={handleNewColor} />
     </div>
   );
