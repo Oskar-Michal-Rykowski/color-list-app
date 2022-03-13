@@ -1,20 +1,15 @@
+import Form from './components/layout/Form/Form';
+import Header from './components/layout/Header/Header';
+import List from './components/layout/List/List';
+import MainLayout from './components/layout/MainLayout/MainLayout';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          aaaEdit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainLayout>
+      <Header />
+      <Form />
+      <List />
+    </MainLayout>
   );
 }
 
